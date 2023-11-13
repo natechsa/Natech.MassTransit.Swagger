@@ -21,8 +21,10 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore --configuration Release
-    - name: Find .nupkg file
-      id: find_nupkg
+    - name: Find .nupkg file and print its path
       run: |
-        echo "::set-output name=nupkg::$(find . -name '*.nupkg' | head -n 1)"
+        find . -name '*.nupkg' -print0 | xargs -0 -I {} echo {}
+    - name: Publish to nuget
+      run: dotnet nuget push **/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
+    
     
