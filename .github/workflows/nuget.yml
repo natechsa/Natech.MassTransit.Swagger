@@ -3,8 +3,6 @@ name: Nuget Release
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
@@ -21,19 +19,9 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore --configuration Release
-    # - name: Publish to nuget
-    #   run: dotnet nuget push **/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
+    - name: Publish to nuget
+      run: dotnet nuget push **/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
     - name: Publish to github packages
       run: dotnet nuget push **/*.nupkg -s https://nuget.pkg.github.com/natechsa/index.json -k ${{ secrets.GH_API_KEY }}
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_API_KEY }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        draft: false
-        prerelease: false
     
     
