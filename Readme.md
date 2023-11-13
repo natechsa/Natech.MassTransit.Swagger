@@ -37,19 +37,19 @@ iex "& { $(irm https://aka.ms/install-artifacts-credprovider.ps1) }" | dotnet to
 #### Using with Azure Service Bus and KeyVault
 
 ```shell
-mtswagger --keyvaultUri=https://kv-test.vault.azure.net/ --keyvaultBusKey=BusConnStr --dllPath=C:\git\Service.dll
+mtswagger --keyvaultUri= https://kv-test.vault.azure.net/ --keyvaultBusKey= BusConnStr --dllPath= C:\git\Service.dll
 ```
 
 #### Using with RabbitMQ
 
 ```shell
-mtswagger --rabbitUri=amqp://localhost --rabbitUsername=guest --rabbitPassword=guest --rabbitVhost=/ --dllPath=C:\git\Service.dll
+mtswagger --rabbitUri= amqp://localhost --rabbitUsername= guest --rabbitPassword= guest --rabbitVhost=/ --dllPath= C:\git\Service.dll
 ```
 
 #### Using with no KeyVault and Azure Service Bus
 
 ```shell
-mtswagger --sbConnectionString=Endpoint=sb://test.servicebus.windows.net --dllPath=C:\git\Service.dll
+mtswagger --sbConnectionString= Endpoint=sb://test.servicebus.windows.net --dllPath= C:\git\Service.dll
 ```
 
 ## Update
