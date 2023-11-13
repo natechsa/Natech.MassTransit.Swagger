@@ -17,6 +17,8 @@
 		<PackAsTool>true</PackAsTool>
 		<ToolCommandName>mtswagger</ToolCommandName>
 		<GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+		<RepositoryUrl>https://github.com/natechsa/Natech.MassTransit.Swagger</RepositoryUrl> 
+		<RepositoryType>git</RepositoryType> 
 	</PropertyGroup>
 
 	<ItemGroup Label="MassTransit">
