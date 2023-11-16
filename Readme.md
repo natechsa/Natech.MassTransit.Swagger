@@ -1,5 +1,5 @@
-![Nuget](https://img.shields.io/nuget/dt/Natech.MassTransit.Swagger)
-
+![Nuget](https://img.shields.io/nuget/dt/Natech.MassTransit.Swagger?style=flat-square)
+![Nuget](https://img.shields.io/nuget/v/Natech.MassTransit.Swagger?style=flat-square)  
 
 ## What is this?
 
