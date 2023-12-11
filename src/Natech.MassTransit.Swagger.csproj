@@ -22,9 +22,9 @@
 	</PropertyGroup>
 
 	<ItemGroup Label="MassTransit">
-		<PackageReference Include="MassTransit" Version="8.1.0" />
+		<PackageReference Include="MassTransit" Version="8.1.2" />
 		<PackageReference Include="MassTransit.RabbitMQ" Version="8.1.0" />
-		<PackageReference Include="MassTransit.Azure.ServiceBus.Core" Version="8.1.0" />
+		<PackageReference Include="MassTransit.Azure.ServiceBus.Core" Version="8.1.2" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -35,6 +35,6 @@
 
 	<ItemGroup Label="Azure Identity">
 		<PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.2.2" />
-		<PackageReference Include="Azure.Identity" Version="1.10.0" />
+		<PackageReference Include="Azure.Identity" Version="1.10.3" />
 	</ItemGroup>
 </Project>
