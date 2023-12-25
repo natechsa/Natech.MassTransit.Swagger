@@ -22,8 +22,8 @@
 	</PropertyGroup>
 
 	<ItemGroup Label="MassTransit">
-		<PackageReference Include="MassTransit" Version="8.1.0" />
-		<PackageReference Include="MassTransit.RabbitMQ" Version="8.1.0" />
+		<PackageReference Include="MassTransit" Version="8.1.3" />
+		<PackageReference Include="MassTransit.RabbitMQ" Version="8.1.3" />
 		<PackageReference Include="MassTransit.Azure.ServiceBus.Core" Version="8.1.0" />
 	</ItemGroup>
 
